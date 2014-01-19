@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" ng-app="griha">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>
+Griha | Developers and Cosultants Pvt Ltd</title>
+
+<link rel='stylesheet' id='dashicons-css'  href='http://demo.themespike.com/realestate/wp-includes/css/dashicons.min.css?ver=3.8' type='text/css' media='all' />
+<link rel='stylesheet' id='thickbox-css'  href='http://demo.themespike.com/realestate/wp-includes/js/thickbox/thickbox.css?ver=20131201' type='text/css' media='all' />
+<link rel='stylesheet' id='cp-style-css'  href='http://demo.themespike.com/realestate/wp-content/themes/real-estate/assets/css/cp.css?ver=3.1' type='text/css' media='all' />
+<!--<link rel='stylesheet' id='style-css'  href='http://demo.themespike.com/realestate/wp-content/themes/real-estate/style.css?ver=2.3' type='text/css' media='all' />-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Oxygen:700' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="http://maplacejs.com/stylesheets/libs.min.css" />
+<link rel="stylesheet" href="http://maplacejs.com/stylesheets/app.css" />
+
+<script type='text/javascript' src='http://demo.themespike.com/realestate/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://demo.themespike.com/realestate/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var thickboxL10n = { "next": "Next >", "prev": "< Prev", "image": "Image", "of": "of", "close": "Close", "noiframes": "This feature requires inline frames. You have iframes disabled or your browser does not support them.", "loadingAnimation": "http:\/\/demo.themespike.com\/realestate\/wp-includes\/js\/thickbox\/loadingAnimation.gif" };
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://demo.themespike.com/realestate/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105'></script>
+<script type='text/javascript' src='http://demo.themespike.com/realestate/wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.10.3'></script>
+<script type='text/javascript' src='http://demo.themespike.com/realestate/wp-includes/js/jquery/ui/jquery.ui.widget.min.js?ver=1.10.3'></script>
+<script type='text/javascript' src='http://demo.themespike.com/realestate/wp-includes/js/jquery/ui/jquery.ui.mouse.min.js?ver=1.10.3'></script>
+<script type='text/javascript' src='http://demo.themespike.com/realestate/wp-includes/js/jquery/ui/jquery.ui.sortable.min.js?ver=1.10.3'></script>
+<script type='text/javascript' src='http://demo.themespike.com/realestate/wp-content/themes/real-estate/assets/js/cp.js?ver=3.1'></script>
+<script type='text/javascript' src='http://demo.themespike.com/realestate/wp-includes/js/jquery/ui/jquery.ui.tabs.min.js?ver=1.10.3'></script>
+<script type='text/javascript' src='http://demo.themespike.com/realestate/wp-content/themes/real-estate/assets/js/custom.js?ver=2.3'></script>
+<script type="text/javascript" src="JSLib/angular.js"></script>
+<script type="text/javascript" src="Scripts/app.js"></script>
+<script type="text/javascript" src="Scripts/ProjectController.js"></script>
+<script type="text/javascript" src="Scripts/TabController.js"></script>
+<script type="text/javascript" src="JSLib/ui-bootstrap-0.6.0.js"></script>
+<script type="text/javascript" src="JSLib/carousel.js"></script>
+<script type="text/javascript" src="Scripts/ProjectDetailController.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7" type="text/javascript"></script>
+<script type="text/javascript" src="JSLib/maplace.min.js"></script>
+<script type="text/javascript" src="JSLib/modal.js"></script>
+<script type="text/javascript" src="Scripts/ModalController.js"></script>
+<script type="text/javascript" src="../JSLib/jssor.core.js"></script>
+<script type="text/javascript" src="../JSLib/jssor.utils.js"></script>
+<script type="text/javascript" src="../JSLib/jssor.slider.js"></script>
+<script type="text/javascript" src="Scripts/amazingslider.js"></script>
+<script type="text/javascript" src="Scripts/am-carousel.js"></script>
+    
+<!-- amazing slider-->
+    <link rel="stylesheet" type="text/css" media="all" href="http://amazingslider.com/wp-content/themes/twentyeleven/style.css" />
+    <script type='text/javascript' src='http://amazingslider.com/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+    <script type='text/javascript' src='http://amazingslider.com/wp-content/uploads/amazingslider/sharedengine/amazingslider.js?ver=1.7'></script>
+
+<link href="Styles/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="Styles/style.css"  id='style-css' rel="stylesheet" type="text/css" />
+<!--<link href="Styles/generic.css" rel="stylesheet" type="text/css" />-->
+
+<meta name="TSV" content="2.3" />
+<meta name="TSFV" content="3.1" />
+
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		
+<link rel="pingback" href="http://demo.themespike.com/realestate/xmlrpc.php" />
+
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://demo.themespike.com/realestate/wp-content/themes/real-estate/assets/css/ie8-fix.css" /><![endif]-->
+
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="http://demo.themespike.com/realestate/wp-content/themes/real-estate/assets/css/ie7-fix.css" /><![endif]-->
+
+<!--[if IE 6]>
+
+	<link rel="stylesheet" type="text/css" href="http://demo.themespike.com/realestate/wp-content/themes/real-estate/assets/css/ie6-fix.css" />
+
+	<script type="text/javascript" src="http://demo.themespike.com/realestate/wp-content/themes/real-estate/assets/js/dd.belated.png.js"></script>
+	<script type="text/javascript">
+	  DD_belatedPNG.fix('.png-fix');
+	</script>
+
+<![endif]-->
+
+</head>
+
+<body class="home blog"><script type="text/javascript">ANCHORFREE_VERSION = "623161526"</script><script type='text/javascript'>                            var _AF2$ = { 'SN': 'HSSHIELD00IN', 'IP': '50.117.61.135', 'CH': 'HSSCNL000409', 'CT': 'z52', 'HST': '&gtrk=n&NUM_VID=0&NUM_VID_TS=1387611667&SFLAG=0&in=1387618098_189921662|d,253805475|w,787657089|m,3589924302|t&out=1387618098_3963170|d,5586822|w,35442292|m,168815640|t&FW_UA=MSIE/11.0&clsBtnCnt=6', 'AFH': 'hss186', 'RN': Math.floor(Math.random() * 999), 'TOP': (parent.location != document.location || top.location != document.location) ? 0 : 1, 'AFVER': '3.20', 'fbw': false, 'FBWCNT': 0, 'FBWCNTNAME': 'FBWCNT_IEG', 'NOFBWNAME': 'NO_FBW_IEG', 'B': 'ieg', 'VER': 'nonus' }; if (_AF2$.TOP == 1) { document.write("<scr" + "ipt src='http://box.anchorfree.net/insert/insert.php?sn=" + _AF2$.SN + "&ch=" + _AF2$.CH + "&v=" + ANCHORFREE_VERSION + 6 + "&b=" + _AF2$.B + "&ver=" + _AF2$.VER + "&afver=" + _AF2$.AFVER + "' type='text/javascript'></scr" + "ipt>"); }</script>
+
+	<!-- Begin: wrapper -->
+	<div id="wrapper">
+	
+		<!-- Begin: header -->
+		<div id="header">
+
+						
+			<!--<h1 id="logo">-->			
+				<img src="../Images/Logo_Small_1.png" alt="Griha" />
+			<!--</h1>-->						
+			<div id="navHolder" class="menu-header-menu-container"><ul id="navWrapper" class="nav_main_class clearfix"><li id="menu-item-696" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-696"><a href="http://demo.themespike.com/realestate/">Home</a></li>
+<li id="menu-item-702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-702"><a href="http://demo.themespike.com/realestate/?page_id=691">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-698"><a href="http://demo.themespike.com/realestate/?page_id=689">Multi Columns</a></li>
+	<li id="menu-item-707" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-707"><a href="http://demo.themespike.com/realestate/?p=675">Layout Test</a></li>
+</ul>
+</li>
+<li id="menu-item-700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-700"><a href="http://demo.themespike.com/realestate/?page_id=155">Links</a>
+<ul class="sub-menu">
+	<li id="menu-item-699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-699"><a href="http://demo.themespike.com/realestate/?page_id=156">Page with comments disabled</a></li>
+	<li id="menu-item-710" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-710"><a href="http://demo.themespike.com/realestate/?p=149">Comment Test</a></li>
+</ul>
+</li>
+<li id="Li1" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="http://demo.themespike.com/realestate/?page_id=83">News</a></li>
+<li id="Li3" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="http://demo.themespike.com/realestate/?page_id=83">Support</a></li>
+<li id="Li2" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="#/blog">Blog</a></li>
+<li id="menu-item-701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="http://demo.themespike.com/realestate/?page_id=83">Contact Us</a></li>
+</ul></div>			
+		</div>
+		<!-- End: header -->	
+<div ng-view></div>
+</div>
+</body>
+</html>

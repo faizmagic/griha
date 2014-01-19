@@ -1,0 +1,66 @@
+﻿[
+{
+	"title":"Single Villa poject",
+	"location":"Kuttamassery, Aluva",
+	"url":"#/projectDetail/1",
+	"thumbnail":
+				{
+				 "imageSrc":"http://demo.themespike.com/realestate/wp-content/uploads/2012/01/scottwills_enchantedcreek-208x101.jpg",
+				 "ribbonSrc":"http://demo.themespike.com/realestate/wp-content/themes/real-estate/images/ribbon-reduced.png"
+				},
+	"unitAndPrice":
+				{
+					"info":"4 beds, 5 bathooms, private gym, 2900sqft in 5.5 cents",
+					"price":"INR 1.2 cr"
+				},
+	"description": "This villa is located in a serene environment at kuttamasery near Aluva, the house features all modern amenities like private gym, spacious bedrooms with all having attached toilets."			
+},
+{
+	"title":"Single Villa poject",
+	"location":"Kuttamassery, Aluva",
+	"url":"1",
+	"thumbnail":
+				{
+				 "imageSrc":"http://demo.themespike.com/realestate/wp-content/uploads/2012/01/scottwills_enchantedcreek-208x101.jpg",
+				 "ribbonSrc":"http://demo.themespike.com/realestate/wp-content/themes/real-estate/images/ribbon-reduced.png"
+				},
+	"unitAndPrice":
+				{
+					"info":"4 beds, 5 bathooms, private gym, 2900sqft in 5.5 cents",
+					"price":"INR 1.2 cr"
+				},
+	"description": "This villa is located in a serene environment at kuttamasery near Aluva, the house features all modern amenities like private gym, spacious bedrooms with all having attached toilets."			
+},
+{
+	"title":"Single Villa poject",
+	"location":"Kuttamassery, Aluva",
+	"url":"1",
+	"thumbnail":
+				{
+				 "imageSrc":"http://demo.themespike.com/realestate/wp-content/uploads/2012/01/scottwills_enchantedcreek-208x101.jpg",
+				 "ribbonSrc":"http://demo.themespike.com/realestate/wp-content/themes/real-estate/images/ribbon-reduced.png"
+				},
+	"unitAndPrice":
+				{
+					"info":"4 beds, 5 bathooms, private gym, 2900sqft in 5.5 cents",
+					"price":"INR 1.2 cr"
+				},
+	"description": "This villa is located in a serene environment at kuttamasery near Aluva, the house features all modern amenities like private gym, spacious bedrooms with all having attached toilets."			
+},
+{
+	"title":"Single Villa poject",
+	"location":"Kuttamassery, Aluva",
+	"url":"1",
+	"thumbnail":
+				{
+				 "imageSrc":"http://demo.themespike.com/realestate/wp-content/uploads/2012/01/scottwills_enchantedcreek-208x101.jpg",
+				 "ribbonSrc":"http://demo.themespike.com/realestate/wp-content/themes/real-estate/images/ribbon-reduced.png"
+				},
+	"unitAndPrice":
+				{
+					"info":"4 beds, 5 bathooms, private gym, 2900sqft in 5.5 cents",
+					"price":"INR 1.2 cr"
+				},
+	"description": "This villa is located in a serene environment at kuttamasery near Aluva, the house features all modern amenities like private gym, spacious bedrooms with all having attached toilets."			
+}
+]

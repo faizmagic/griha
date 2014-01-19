@@ -1,0 +1,11 @@
+margin-left: 195px
+margin-top: -30px 
+
+
+CNAME Destination: ghs.googlehosted.com
+CNME value: www
+
+Sign-in name : 74953111
+Password : 40fb4ot6u6qeq0z
+Customer service PIN : 9204
+GoDaddy customer service email : gdomains@secureserver.net
