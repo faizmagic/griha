@@ -2,7 +2,7 @@ jQuery(document).ready(function(){
     var jsFolder = "http://amazingslider.com/wp-content/uploads/amazingslider/19/sliderengine/";
     jQuery("#amazingslider-19").amazingslider({
         jsfolder:jsFolder,
-        width:600,
+        width:800,
         height:300,
         watermarkstyle:"text",
         loadimageondemand:false,

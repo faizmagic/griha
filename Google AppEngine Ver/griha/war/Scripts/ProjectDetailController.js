@@ -1,19 +1,10 @@
 ﻿
-function projectDetailCtrl($scope, $routeParams, $modal, Project) {
+function projectDetailCtrl($scope, $routeParams, Project) {
     
 	Project.getDetails($routeParams.Id).success(function (response) {
         $scope.details = response;
     })
 
-    $scope.open = function () {
-       // $event.preventDefault();
-
-        var modalInstance = $modal.open({
-            templateUrl: 'Partials/imageslider.html'
-            //controller: ModalInstanceCtrl
-        });
-    };
-    
     initialiseModel();
     
     $scope.sendMail = function(){

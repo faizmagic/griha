@@ -849,4 +849,31 @@ h2#footerLogo span,
 .content-styles .ngg-imagebrowser-nav .next { float: right; margin-right: 3px; padding: 3px 7px; }
 .content-styles .ngg-imagebrowser-nav .ngg-imagebrowser-desc { clear: both; padding: 10px 5px 5px; }
 .content-styles .ngg-imagebrowser-nav .ngg-imagebrowser-desc p { margin-bottom: 8px; }
+
+.top_icons{ float:right; padding:46px 0px 0px 0px; color:#7d7d7d;}
+.top_icons ul {
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+}
+.top_icons li {
+     float:left;
+	 display:inline;  
+	 margin:0px; 
+	 padding:0px 0px 0px 3px;
+	 
+}
+.top_icons li a {
+	display: block;
+	text-decoration: none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #747474;
+	 
+}
+.last {
+	color: #7d7d7d;
+	line-height:17px;
+	 
+}
 /**/

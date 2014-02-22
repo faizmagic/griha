@@ -22,19 +22,29 @@ Sample Listing 1 | Real Estate</title>
     
 
     <div id="respond1" class="comment-respond" style="width:100%" ng-show="displayContactForm">
-				<h3 id="H3" class="comment-reply-title">Contact Owner<small><a rel="nofollow" id="A1" href="/realestate/?ts-listings=sample-listing-1#respond" style="display:none;">Cancel reply</a></small></h3>			
+				<h3 id="H3" class="comment-reply-title">Contact Griha<small><a rel="nofollow" id="A1" href="/realestate/?ts-listings=sample-listing-1#respond" style="display:none;">Cancel reply</a></small></h3>			
 <form name="frmContactUs" id="frmContactUs">
-<ul>							
-	<li class="comment-form-author"><label for="author">Name</label><small class="required">Required</small><input id="Text1" type="text" ng-model="contactUs.name" size="22" required /></li>
-	<li class="comment-form-email"><label for="email">Email</label><small class="required">Required</small><input id="Text2" type="text" ng-model="contactUs.email" size="22" required /></li>
-	<li class="comment-form-url"><label for="url">Phone</label><small class="required">Required</small><input id="Text3" type="text" ng-model="contactUs.phone" size="22" required /></li>
-	<li class="text-area-wrapper"><textarea id="Textarea1" name="comment" cols="200" rows="10" style="width:100%" ng-model="contactUs.message"></textarea></li>						
-</ul>						
-<p class="form-submit">
-	<input name="button" type="button" value="Send" ng-click="sendMail()" ng-disabled="frmContactUs.$invalid"/>
-	<input type='hidden' name='comment_post_ID' ng-model="contactUs.propertyName" id='Hidden1' />
-</p>
+		<ul>							
+			<div class="form-group" ng-class="{'has-error': frmContactUs.ContactName.$invalid}">
+			<li class="comment-form-author"><label for="author">Name</label><input id="Text1"  type="text" name="ContactName" ng-model="contactUs.name" size="22" class="form-control" required/></li>
+			</div>
+
+			<div class="form-group" ng-class="{'has-error': frmContactUs.ContactEmail.$invalid}">
+			<li class="comment-form-email"><label for="email">Email</label><input id="Text2" type="text" name="ContactEmail" ng-model="contactUs.email" size="22" class="form-control" required /></li>
+			</div>
+			<div class="form-group" ng-class="{'has-error': frmContactUs.ContactPhone.$invalid}">
+			<li class="comment-form-url"><label for="url">Phone</label><input id="Text3" type="text" name="ContactPhone" ng-model="contactUs.phone" size="22" class="form-control" required /></li>
+			</div>
+
+			<li class="text-area-wrapper"><textarea id="Textarea1" name="comment" cols="200" rows="10" style="width:100%" ng-model="contactUs.message"></textarea></li>						
+		</ul>						
+		<p class="form-submit">
+<!-- 			<input name="button" type="button" class="btn btn-primary" value="Send" ng-click="sendMail()"/> -->
+			<button id="ButSub" class="btn btn-primary" ng-click="sendMail()">Send</button>
+			<input type='hidden' name='comment_post_ID' ng-model="contactUs.propertyName" id='Hidden1' />
+		</p>
 </form>
+
 </div><!-- #respond -->
 <div ng-show="displaySendMailConf">
 <br />
@@ -74,18 +84,7 @@ Sample Listing 1 | Real Estate</title>
                     </div>
                     <!--<script src="http://amazingslider.com/wp-content/uploads/amazingslider/19/sliderengine/initslider.js"></script>-->
                 </div>
-				</div>
-<!-- begin: Tabs -->
-			<!-- <div id="homeTabs">
-				
-				<ul class="tabs-nav">
-					<li style="margin-top:25px;"><a><span ng-click="showTab('tab1')">Project Description</span></a></li>
-					<li style="margin-top:25px;"><a><span ng-click="showTab('tab2')">Specification</span></a></li>
-					<li style="margin-top:25px;"><a><span ng-click="showTab('tab3')">Neighbourhood</span></a></li>
-					<div class="clear"></div>
-				</ul>
-			</div> -->
-			
+				</div>			
 <div style="margin-top: 300px">
 	<tabset>
 		<tab heading="Project Description">
@@ -93,13 +92,13 @@ Sample Listing 1 | Real Estate</title>
       		<h3 id="h2" class="postSubTitle">Neighbourhood</h3>
 		 <!--Begin: google maps-->
         <div class="gmap" id="Div1" style="width:650px;height:400px" googlemap></div>
-    <!--End: google maps-->
+        <!--End: google maps-->
     	</tab>
     	<tab heading="Specification">
       		<div ng-include="'Partials/Specification.html'"></div>
     	</tab>
     	<tab heading="Work in Progress">
-    		<div ng-include=""></div>
+    		<div ng-include="'Partials/workinprogress.html'" thumbnailview></div>
     	</tab>
 	</tabset>			
 </div>
@@ -115,37 +114,7 @@ Sample Listing 1 | Real Estate</title>
 	<!-- end: insideContentWrapper -->
 
 <!-- end: Tabs -->
-		<div class="clear"></div>
-		
-	<div id="footerWrapper">
-	
-		<!-- Begin: footerBg -->
-		<div id="footerBg">
-			<!-- Begin: footerContent -->
-			<div id="footerContent">
-			
-				<p id="copyRight"> Copyright &copy; 2013 Real Estate <br />
-				
-								
-					<span id="client_section"><a href="http://themeforest.net/item/real-estate-theme/59729" target="_blank">Real Estate</a> by <a href="http://www.themespike.com" target="_blank">Themespike</a>, Customized by <a href="http://www.themespike.com" target="_blank">Themespike</a></span>
-				
-								
-				<h2 id="footerLogo" class="png_fix"><a href="http://demo.themespike.com/realestate/"><span>Real Estate</span></a></h2>
-				
-				<ul id="footerNav" class=""><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-696"><a href="http://demo.themespike.com/realestate/">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-702"><a href="http://demo.themespike.com/realestate/?page_id=691">One Column</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-700"><a href="http://demo.themespike.com/realestate/?page_id=155">Page with comments</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="http://demo.themespike.com/realestate/?page_id=83">Contact Us</a></li>
-</ul>			
-			</div>
-			<!-- End: footerBg -->
-	    </div>
-		<!-- End: footerBg -->
-	
-	</div>
-	
-		
-		
+		<div class="clear"></div>	
 </body>
 
 </html>

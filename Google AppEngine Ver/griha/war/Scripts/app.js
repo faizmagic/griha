@@ -1,5 +1,7 @@
 ﻿
-var app = angular.module('griha', ['ui.bootstrap.modal', 'ui.bootstrap.tabs']);
+var app = angular.module('griha', ['ui.bootstrap.carousel', 'ui.bootstrap.tabs', 'ngRoute']);
+//var app = angular.module('griha', ['ui.bootstrap', 'ngRoute']);
+//var app = angular.module('griha', ['ui.bootstrap.carousel', 'ui.bootstrap.tabs']);
 
 app.factory('Project', function ($q, $http) {
     return {
@@ -26,36 +28,43 @@ app.factory('Project', function ($q, $http) {
 });
   
 
-app.config(['$routeProvider', function ($routeProvider) {
+app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
     when('/home', { templateUrl: 'Partials/Home.html', controller:projectCtrl}).
     when('/blog', { templateUrl: 'Partials/Blog.html' }).
-    when('/projectDetail/:Id', { templateUrl: 'Partials/ProjectDetail.html', controller: projectDetailCtrl }).
-    when('/modal', { templateUrl: 'Partials/Modal.html', controller: ModalDemoCtrl }).
-    when('/image', { templateUrl: 'Partials/imageslider.html', controller: ModalDemoCtrl }).
+    when('/projectDetail/:Id', { templateUrl: 'Partials/ProjectDetail.html', controller:projectDetailCtrl}).
+    when('/carousel', { templateUrl: 'Partials/carousel.html', controller: projectCtrl }).
+    when('/nivo', { templateUrl: 'Partials/NivoSlider.html' }).
+    when('/bslider', { templateUrl: 'Partials/bslider.html' }).
     otherwise({ redirectTo: '/home' });
+
+    //$locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix('!');
+
 }]);
 
 
 
-app.directive('googlemap', function () {
+app.directive('googlemap', function ($timeout) {
     return {
         // Restrict it to be an attribute in this case
         restrict: 'A',
         // responsible for registering DOM listeners as well as updating the DOM
         link: function(scope, element, attrs) {
             //$(element).toolbar(scope.$eval(attrs.toolbarTip));
-            var v = new Maplace({
-                show_markers: true,
-                map_div: '#' + attrs.id,
-                locations: [{
-                    lat: 10.120302,
-                    lon: 76.386539,
-                    zoom: 13
-                }]
-            });
+            $timeout(function () {
+                var v = new Maplace({
+                    show_markers: true,
+                    map_div: '#' + attrs.id,
+                    locations: [{
+                        lat: 10.120302,
+                        lon: 76.386539,
+                        zoom: 13
+                    }]
+                });
 
-            v.Load();
+                v.Load();
+            }, 0);
         }
     }
 });
@@ -105,8 +114,8 @@ app.directive('amazingslider', function () {
             var id = '#' + attrs.id;
             jQuery(id).amazingslider({
                 jsfolder: jsFolder,
-                width: 600,
-                height: 300,
+                width: 1100,
+                height: 500,
                 watermarkstyle: "text",
                 loadimageondemand: false,
                 watermarktext: "http://amazingslider.com",

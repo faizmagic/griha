@@ -7,42 +7,27 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 
-<body class="home blog">    	
+<body class="home blog" ng-controller="projectCtrl">    	
 	<!-- Begin: subheader -->
 	<div id="subHeader">
-	
-		<div id="bannerLeftWrapper">
-            <br />
-        	<h2><a href="http://demo.themespike.com/realestate/?page_id=675">Sample Welcome Text Title</a></h2>
-            <br />
-            <br />
-            <br />
-			<p>This is a sample welcome message, you can edit me on the admin panel, under Appearance &gt; Theme Options &gt; Home Page Setup</p>
-	
-			<div id="subBannerLeft">
-	
-				<h2><a href="http://demo.themespike.com/realestate/?page_id=675">Sample Header Block Title</a></h2>
-	
-				<p>This is a sample header block message, you can edit me on the admin panel, under Appearance &gt; Theme Options &gt; Home Page Setup</p>
-	
-			</div>
-
-    	</div>
+		<!--<div>
+		  <div style="height: 305px">
+		    <carousel interval="myInterval">
+		      <slide ng-repeat="slide in slides" active="slide.active">
+		        <img ng-src="{{slide.image}}" style="margin:auto;">
+		        <div class="carousel-caption">
+		          <h4>Slide {{$index}}</h4>
+		          <p>{{slide.text}}</p>
+		        </div>
+		      </slide>
+		    </carousel>
+		  </div>
+		 </div>-->
 		
-		<!-- Begin: banner-wrapper -->
-		<!--<div id="banner-wrapper">
-				<div id="banner">
-					<a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-1" ><img src="../Images/Villa Project/House2.png" title="#banner-caption-0"  alt="" /></a>
-                    <a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-2" ><img src="http://demo.themespike.com/realestate/wp-content/uploads/2012/01/scottwills_river12-566x258.jpg" title="#banner-caption-1"  alt="" /></a>					
-				</div>
-				
-				<div id="banner-caption-0" class="nivo-html-caption">Sample Caption 1</div><div id="banner-caption-1" class="nivo-html-caption">Sample Caption 2</div>				
-		</div>-->
-		<!-- End: banner-wrapper -->
 		<div class="demo-slider-3" style="margin-bottom:3em;">
-        <div id="amazingslider-19" style="display:block;position:relative;margin:-30px auto 30px 195px;" amazingslider>
+        <div id="amazingslider-19"  style="display:block;position:relative;margin:-30px auto 30px auto;" amazingslider>
         <ul class="amazingslider-slides" style="display:none;">
-            <li><a href="http://amazingslider.com/wp-content/uploads/2012/12/dandelion.jpg" class="html5lightbox"><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/dandelion-600-300.jpg" alt="Dandelion" data-description="Blessings on thy sunny face, in my heart thou hast a place" /></a>            </li>
+            <li><a href="http://amazingslider.com/wp-content/uploads/2012/12/dandelion.jpg" class="html5lightbox"><img src="http://www.slidesjs.com/img/example-slide-350-3.jpg" alt="Dandelion" data-description="Blessings on thy sunny face, in my heart thou hast a place" /></a>            </li>
             <li><a href="http://www.youtube.com/embed/TLkA0RELQ1g" class="html5lightbox" data-width="640" data-height="360"><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/elephants-dream-600-300.jpg" alt="Elephants Dream" /></a>            </li>
             <li><a href="http://www.youtube.com/embed/YE7VzlLtp-4" class="html5lightbox" data-width="640" data-height="360"><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/big-buck-bunny-600-300.jpg" alt="Big Buck Bunny" /></a>            </li>
             <li><a href="http://amazingslider.com/wp-content/uploads/2012/12/sakuratrees.jpg" class="html5lightbox"><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/sakura-trees-600-300.jpg" alt="Sakura Trees" data-description="A Sweet Aroma Around the Trees" /></a>            </li>
@@ -58,19 +43,16 @@
         <div class="amazingslider-engine" style="display:none;"><a href="http://amazingslider.com">jQuery Image Slider</a></div>
         <div class="amazingslider-engine" style="display:none;"><a href="http://amazingslider.com">WordPress Slideshow</a></div>
     </div>
-    <!--<script src="http://amazingslider.com/wp-content/uploads/amazingslider/19/sliderengine/initslider.js"></script>-->
 </div>
-
 		<div class="clear"></div>
-		
-	</div>
+</div>
 	<!-- End: subheader -->
 	
 	<!-- Begin: homeContentWrapper -->
 	<div id="homeContentWrapper">
 	
 		<!-- Begin: homeContentLeft -->
-		<div id="homeContentLeft" ng-controller="projectCtrl">
+		<div id="homeContentLeft">
 		
 			<!-- Begin: postColumnLeft -->
 			<div id="postColumnLeft">
@@ -97,7 +79,7 @@
 				</div>
 			<div class="clear"></div>
 			
-			<p class="viewAllHolder"><a href="http://demo.themespike.com/realestate/?post_type=ts-listings"><span>View All</span></a></p>				
+			<!--<p class="viewAllHolder"><a href="http://demo.themespike.com/realestate/?post_type=ts-listings"><span>View All</span></a></p>-->				
 			</div>
 			<!-- End: postColumnLeft -->
 			
@@ -106,259 +88,34 @@
 		
 		<!-- Begin: homeContentRight -->
 		<div id="homeContentRight">
-		
-			<div id="homeSearchSection">
-				<form method="get" id="searchform" action="http://demo.themespike.com/realestate//">
-					<div id="inputFieldBg"><input type="text" value="" name="s" id="s" class="textSearch" /></div>
-					<button type="submit" class="searchButton" id="searchsubmit" value="Search"><span>Go</span></button>
-				</form>
-			</div>
 			
-			<div class="clear"></div>
-			
-			<div id="homeTabs" ng-controller="tabCtrl">
-				
-				<ul class="tabs-nav">
-					<li><a><span ng-click="showTab('tab1')">Latest News</span></a></li>
-					<li><a><span ng-click="showTab('tab2')">Real Estate Blog</span></a></li>
-					<li><a><span ng-click="showTab('tab3')">Best Resources</span></a></li>
-					<div class="clear"></div>
-				</ul>
-				
-				<!-- Begin: firstTab -->
-				<div id="firstTab" class="tabs-container" ng-show="displayTab1">
-					<div class="containerTab">					
-						<ul>					
-							<li class="post-706 ts-listings type-ts-listings status-publish hentry">
-								<h3><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3-2" rel="bookmark" title="Permanent Link to Sample Listing 3">Sample Listing 3</a></h3>
-								<p class="postInfo"><span class="postInfoDate">January 10th, 2012</span><span class="postInfoComment"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3-2#respond" title="Comment on Sample Listing 3">No Comments</a></span></p>
-								<div class="entry"><p>Fusce risus mi, semper in hendrerit sit amet, molestie sed justo. Pellentesque nec est id felis pulvinar ullamcorper ut ac mi.</p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3-2"><span>Read More</span></a></p>
-							</li>					
-							<li class="post-705 ts-listings type-ts-listings status-publish hentry">
-								<h3><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3" rel="bookmark" title="Permanent Link to Sample Listing 4">Sample Listing 4</a></h3>
-								<p class="postInfo"><span class="postInfoDate">January 10th, 2012</span><span class="postInfoComment"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3#respond" title="Comment on Sample Listing 4">No Comments</a></span></p>
-								<div class="entry"><p>Cras mattis malesuada nisl et lobortis. Proin interdum urna tincidunt massa posuere sagittis. Nunc dapibus cursus sem.</p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3"><span>Read More</span></a></p>
-							</li>					
-							<li class="post-695 ts-listings type-ts-listings status-publish hentry">
-								<h3><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-2" rel="bookmark" title="Permanent Link to Sample Listing 2">Sample Listing 2</a></h3>
-								<p class="postInfo"><span class="postInfoDate">January 10th, 2012</span><span class="postInfoComment"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-2#respond" title="Comment on Sample Listing 2">No Comments</a></span></p>
-								<div class="entry"><p>Morbi mollis nisl quis libero placerat et suscipit velit placerat. Fusce risus mi, semper in hendrerit sit amet, molestie sed justo. Pellentesque nec </p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-2"><span>Read More</span></a></p>
-							</li>
-							<li class="post-694 ts-listings type-ts-listings status-publish hentry">
-								<h3><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-1" rel="bookmark" title="Permanent Link to Sample Listing 1">Sample Listing 1</a></h3>
-								<p class="postInfo"><span class="postInfoDate">January 10th, 2012</span><span class="postInfoComment"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-1#respond" title="Comment on Sample Listing 1">No Comments</a></span></p>
-								<div class="entry"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500</p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-1"><span>Read More</span></a></p>
-							</li>
-						</ul>
-						<p class="viewAllHolder"><a href="http://demo.themespike.com/realestate/?tax-listings=sample-listing-category"><span>View All</span></a></p>					
-					</div>
-				</div>
-				<!-- End: firstTab -->
-				
-				<!-- Begin: secondTab -->
-				<div id="secondTab" class="tabs-container" ng-show="displayTab2">
-					<div class="containerTab">
-						<ul>
-							<li class="post-128 post type-post status-publish format-standard hentry category-uncategorized">
-								<h3><a href="http://demo.themespike.com/realestate/?p=128" rel="bookmark" title="Permanent Link to Images Test">Images Test</a></h3>
-								<p class="postInfo"><span class="postInfoDate">September 3rd, 2008</span><span class="postInfoComment"><span>Comments Off</span></span></p>
-								<div class="entry"><p>Image Alignment Tests: Un-Captioned Images</p>
-                                <p>Center-align, no caption<br />Center-aligned image with no caption, and text before and after.  ALorem ipsum do</p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?p=128"><span>Read More</span></a></p>
-							</li>					
-							<li class="post-555 post type-post status-publish format-gallery hentry category-uncategorized tag-post-formats">
-								<h3><a href="http://demo.themespike.com/realestate/?p=555" rel="bookmark" title="Permanent Link to Post Format Test: Gallery">Post Format Test: Gallery</a></h3>
-								<p class="postInfo"><span class="postInfoDate">June 10th, 2008</span><span class="postInfoComment"><span>Comments Off</span></span></p>
-								<div class="entry"></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?p=555"><span>Read More</span></a></p>
-							</li>				
-							<li class="post-559 post type-post status-publish format-aside hentry category-uncategorized tag-post-formats">
-								<h3><a href="http://demo.themespike.com/realestate/?p=559" rel="bookmark" title="Permanent Link to Post Format Test: Aside">Post Format Test: Aside</a></h3>
-								<p class="postInfo"><span class="postInfoDate">June 9th, 2008</span><span class="postInfoComment"><span>Comments Off</span></span></p>
-								<div class="entry"><p>“I never tried to prove nothing, just wanted to give a good show. My life has always been my music, it&#8217;s always come first, but the music ain&#8217;t wort</p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?p=559"><span>Read More</span></a></p>
-							</li>				
-							<li class="post-562 post type-post status-publish format-standard hentry category-uncategorized tag-post-formats">
-								<h3><a href="http://demo.themespike.com/realestate/?p=562" rel="bookmark" title="Permanent Link to Post Format Test: Chat">Post Format Test: Chat</a></h3>
-								<p class="postInfo"><span class="postInfoDate">June 8th, 2008</span><span class="postInfoComment"><span>Comments Off</span></span></p>
-								<div class="entry"><p>John: foo<br />Mary: bar<br />John: foo 2</p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?p=562"><span>Read More</span></a></p>
-							</li>
-						</ul>
-						<p class="viewAllHolder"><a href="http://demo.themespike.com/realestate/?cat=1"><span>View All</span></a></p>					
-					</div>
-				
-				</div>
-				<!-- End: secondTab -->
-				
-				<!-- Begin: thirdTab -->
-				<div id="thirdTab" class="tabs-container" ng-show="displayTab3">
-					<div class="containerTab">
-						<ul>
-							<li class="post-706 ts-listings type-ts-listings status-publish hentry">
-								<h3><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3-2" rel="bookmark" title="Permanent Link to Sample Listing 3">Sample Listing 3</a></h3>
-								<p class="postInfo"><span class="postInfoDate">January 10th, 2012</span><span class="postInfoComment"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3-2#respond" title="Comment on Sample Listing 3">No Comments</a></span></p>
-								<div class="entry"><p>Fusce risus mi, semper in hendrerit sit amet, molestie sed justo. Pellentesque nec est id felis pulvinar ullamcorper ut ac mi.</p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3-2"><span>Read More</span></a></p>
-							</li>
-							<li class="post-705 ts-listings type-ts-listings status-publish hentry">
-								<h3><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3" rel="bookmark" title="Permanent Link to Sample Listing 4">Sample Listing 4</a></h3>
-								<p class="postInfo"><span class="postInfoDate">January 10th, 2012</span><span class="postInfoComment"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3#respond" title="Comment on Sample Listing 4">No Comments</a></span></p>
-								<div class="entry"><p>Cras mattis malesuada nisl et lobortis. Proin interdum urna tincidunt massa posuere sagittis. Nunc dapibus cursus sem.</p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3"><span>Read More</span></a></p>
-							</li>
-							<li class="post-695 ts-listings type-ts-listings status-publish hentry">
-								<h3><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-2" rel="bookmark" title="Permanent Link to Sample Listing 2">Sample Listing 2</a></h3>
-								<p class="postInfo"><span class="postInfoDate">January 10th, 2012</span><span class="postInfoComment"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-2#respond" title="Comment on Sample Listing 2">No Comments</a></span></p>
-								<div class="entry"><p>Morbi mollis nisl quis libero placerat et suscipit velit placerat. Fusce risus mi, semper in hendrerit sit amet, molestie sed justo. Pellentesque nec </p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-2"><span>Read More</span></a></p>
-							</li>
-							<li class="post-694 ts-listings type-ts-listings status-publish hentry">
-								<h3><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-1" rel="bookmark" title="Permanent Link to Sample Listing 1">Sample Listing 1</a></h3>
-								<p class="postInfo"><span class="postInfoDate">January 10th, 2012</span><span class="postInfoComment"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-1#respond" title="Comment on Sample Listing 1">No Comments</a></span></p>
-								<div class="entry"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500</p></div>
-								<p class="readMoreHolder"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-1"><span>Read More</span></a></p>
-							</li>
-						</ul>
-						<p class="viewAllHolder"><a href="http://demo.themespike.com/realestate/?tax-listings=sample-listing-category"><span>View All</span></a></p>					
-					</div>
-				</div>
-				<!-- End: thirdTab -->
-				
+			<div id="bannerLeftWrapper">
+            <br />
+        	<h2><a href="http://demo.themespike.com/realestate/?page_id=675">Sample Welcome Text Title</a></h2>
+            <br />
+            <br />
+            <br />
+			<p>This is a sample welcome message, you can edit me on the admin panel, under Appearance &gt; Theme Options &gt; Home Page Setup</p>
+	
+			<div id="subBannerLeft">
+	
+				<h2><a href="http://demo.themespike.com/realestate/?page_id=675">Sample Header Block Title</a></h2>
+	
+				<p>This is a sample header block message, you can edit me on the admin panel, under Appearance &gt; Theme Options &gt; Home Page Setup</p>
+	
 			</div>
+
+    	</div>
+			
 		</div>
 		<!-- End: homeContentRight -->
 		<div class="clear"></div>
 	</div>
 	<!-- End: homeContentWrapper -->
 	
-	<div id="homeWidgetContainer">
-	
-		<div id="ts-twitter-2" class="widget home-widget ts_widget_twitter class-twitter-widget home-widget-twitter clearfix"><h2 class="widget-title">Twitter Widget</h2><div class="twitter_container"><div class="tweet twitt_text_holder">
-				<p><img src="" class="tweet_avatar" /><span class="contents"></span></p>
-				<p class="twitter_timestamp"><strong></strong></p>
-				</div></div><p class="twitter-follow"><a href="http://www.twitter.com/themespike" ><span>Follow Me</span></a></p></div><div id="ts-flickr-2" class="widget home-widget ts_widget_flickr class-flickr-widget home-widget-flickr clearfix"><h2 class="widget-title">Flickr Widget</h2><div class="flickr_container"></div><p class="flickr-view-all"><a href="http://www.flickr.com/44315269@N00"><span>Follow</span></a></p><span class="flickr_id" title="id-44315269@N00"></span><span class="flickr_qty" title="qty-15"></span><span class="flickr_type" title="type-groups_pool"></span></div><div id="ts-excerpt-content-2" class="widget home-widget ts_widget_excerpt_content class-blank-widget home-widget-about clearfix"><h2 class="widget-title">Example Title</h2><div><p>Sample content here, It can have a pre-formated html tags if you want. Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</p>
-<p>Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-</div><p class="about-view-all"><a href="http://demo.themespike.com/realestate/?page_id=691" ><span>Read More</span></a></p></div>		
-		<div class="clear"></div>
-	
-	</div>
+	<div id="homeWidgetContainer"></div>
 
-
-		<div class="clear"></div>
-	
-	<div id="footerWrapper">
-	
-		<!-- Begin: footerBg -->
-		<div id="footerBg">
-			<!-- Begin: footerContent -->
-			<div id="footerContent">
-			
-				<p id="copyRight"> Copyright &copy; 2013 Real Estate <br />
-				
-								
-					<span id="client_section"><a href="http://themeforest.net/item/real-estate-theme/59729" target="_blank">Real Estate</a> by <a href="http://www.themespike.com" target="_blank">Themespike</a>, Customized by <a href="http://www.themespike.com" target="_blank">Themespike</a></span>
-				
-								
-				<h2 id="footerLogo" class="png_fix"><a href="http://demo.themespike.com/realestate/"><span>Real Estate</span></a></h2>
-				
-				<ul id="footerNav" class=""><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-696"><a href="http://demo.themespike.com/realestate/">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-702"><a href="http://demo.themespike.com/realestate/?page_id=691">One Column</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-700"><a href="http://demo.themespike.com/realestate/?page_id=155">Page with comments</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="http://demo.themespike.com/realestate/?page_id=83">Contact Us</a></li>
-</ul>			
-			</div>
-			<!-- End: footerBg -->
-	    </div>
-		<!-- End: footerBg -->
-	
-	</div>
-	
-			
-		<script type="text/javascript">
-
-		    jQuery(document).ready(function ($) {
-
-		        function relative_time(time_value) {
-		            var values = time_value.split(" ");
-		            time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
-		            var parsed_date = Date.parse(time_value);
-		            var relative_to = (arguments.length > 1) ? arguments[1] : new Date();
-		            var delta = parseInt((relative_to.getTime() - parsed_date) / 1000);
-		            delta = delta + (relative_to.getTimezoneOffset() * 60);
-
-		            var r = '';
-		            if (delta < 60) {
-		                r = 'a minute ago';
-		            } else if (delta < 120) {
-		                r = 'couple of minutes ago';
-		            } else if (delta < (45 * 60)) {
-		                r = (parseInt(delta / 60)).toString() + ' minutes ago';
-		            } else if (delta < (90 * 60)) {
-		                r = 'an hour ago';
-		            } else if (delta < (24 * 60 * 60)) {
-		                r = '' + (parseInt(delta / 3600)).toString() + ' hours ago';
-		            } else if (delta < (48 * 60 * 60)) {
-		                r = '1 day ago';
-		            } else {
-		                r = (parseInt(delta / 86400)).toString() + ' days ago';
-		            }
-
-		            return r;
-		        }
-
-		        String.prototype.linkify = function () {
-		            return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function (m) {
-		                return m.link(m);
-		            });
-		        };
-
-		        $('.twitt_text_holder').find('.contents').each(function () {
-		            $(this).html($(this).html().linkify());
-		        });
-
-		        $('.twitt_text_holder').find('.twitter_timestamp').each(function () {
-		            $(this).html(relative_time($(this).text()));
-		        });
-
-		    });
-
-		</script>
-		
-				
-		<script type="text/javascript">
-
-		    jQuery(document).ready(function ($) {
-
-		        if ($('.flickr_id').length >= 1) {
-		            var $flickrID = $('.flickr_id').attr('title').split("id-").slice(-1);
-		            var $flickrQty = $('.flickr_qty').attr('title').split("qty-").slice(-1);
-		            var $flickrType = $('.flickr_type').attr('title').split("type-").slice(-1);
-		        }
-
-		        $.getJSON('http://api.flickr.com/services/feeds/' + $flickrType + '.gne?id=' + $flickrID + '&lang=en-us&format=json&jsoncallback=?', function (data) {
-
-		            $.each(data.items, function (index, item) {
-		                if (index == $flickrQty) {
-		                    return false;
-		                }
-		                else {
-		                    $('<img />').attr('src', item.media.m).addClass('thumb').appendTo('.flickr_container').wrap('<a href="' + item.link + '" mce_href="' + item.link + '"></a>').wrap('<div class="flickr-thumb" />');
-		                }
-		            });
-
-		        });
-
-		    });
-
-		</script>
-		
-			
-		
+	<div class="clear"></div>
 </body>
 
 </html>

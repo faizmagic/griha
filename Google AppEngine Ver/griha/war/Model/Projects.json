@@ -2,7 +2,7 @@
 {
 	"title":"Single Villa poject",
 	"location":"Kuttamassery, Aluva",
-	"url":"#/projectDetail/1",
+	"url":"#!/projectDetail/1",
 	"thumbnail":
 				{
 				 "imageSrc":"http://demo.themespike.com/realestate/wp-content/uploads/2012/01/scottwills_enchantedcreek-208x101.jpg",
