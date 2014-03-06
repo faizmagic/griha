@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+    <title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body class="home blog" ng-controller="projectCtrl">    	
+	<!-- Begin: subheader -->
+	<div id="subHeader">
+		<!--<div>
+		  <div style="height: 305px">
+		    <carousel interval="myInterval">
+		      <slide ng-repeat="slide in slides" active="slide.active">
+		        <img ng-src="{{slide.image}}" style="margin:auto;">
+		        <div class="carousel-caption">
+		          <h4>Slide {{$index}}</h4>
+		          <p>{{slide.text}}</p>
+		        </div>
+		      </slide>
+		    </carousel>
+		  </div>
+		 </div>-->
+		
+		<div class="demo-slider-3" style="margin-bottom:3em;">
+        <div id="amazingslider-19"  style="display:block;position:relative;margin:-30px auto 30px auto;" amazingslider>
+        <ul class="amazingslider-slides" style="display:none;">
+            <li><a href="http://amazingslider.com/wp-content/uploads/2012/12/dandelion.jpg" class="html5lightbox"><img src="http://www.slidesjs.com/img/example-slide-350-3.jpg" alt="Dandelion" data-description="Blessings on thy sunny face, in my heart thou hast a place" /></a>            </li>
+            <li><a href="http://www.youtube.com/embed/TLkA0RELQ1g" class="html5lightbox" data-width="640" data-height="360"><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/elephants-dream-600-300.jpg" alt="Elephants Dream" /></a>            </li>
+            <li><a href="http://www.youtube.com/embed/YE7VzlLtp-4" class="html5lightbox" data-width="640" data-height="360"><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/big-buck-bunny-600-300.jpg" alt="Big Buck Bunny" /></a>            </li>
+            <li><a href="http://amazingslider.com/wp-content/uploads/2012/12/sakuratrees.jpg" class="html5lightbox"><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/sakura-trees-600-300.jpg" alt="Sakura Trees" data-description="A Sweet Aroma Around the Trees" /></a>            </li>
+            <li><a href="http://amazingslider.com/wp-content/uploads/2012/12/bamboo.jpg" class="html5lightbox"><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/bamboo-600-300.jpg" alt="Bamboo" data-description="My Love is Like Bamboo, Growing Each Day" /></a>            </li>
+        </ul>
+        <ul class="amazingslider-thumbnails" style="display:none;">
+            <li><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/thumbnails/dandelion-600-300.jpg" /></li>
+            <li><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/thumbnails/elephants-dream-600-300.jpg" /></li>
+            <li><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/thumbnails/big-buck-bunny-600-300.jpg" /></li>
+            <li><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/thumbnails/sakura-trees-600-300.jpg" /></li>
+            <li><img src="http://amazingslider.com/wp-content/uploads/amazingslider/19/images/thumbnails/bamboo-600-300.jpg" /></li>
+        </ul>
+        <div class="amazingslider-engine" style="display:none;"><a href="http://amazingslider.com">jQuery Image Slider</a></div>
+        <div class="amazingslider-engine" style="display:none;"><a href="http://amazingslider.com">WordPress Slideshow</a></div>
+    </div>
+</div>
+		<div class="clear"></div>
+</div>
+	<!-- End: subheader -->
+	
+	<!-- Begin: homeContentWrapper -->
+	<div id="homeContentWrapper">
+	
+		<!-- Begin: homeContentLeft -->
+		<div id="homeContentLeft">
+		
+			<!-- Begin: postColumnLeft -->
+			<div id="postColumnLeft">
+				<div class="homePostContainer" ng-repeat="project in Listings">
+				
+					<h3><a href="{{project.url}}" title="Permanent Link to Sample Listing 3">{{project.title}}</a></h3>
+					
+					<p class="postInfo">
+						<span class="postInfoDate">{{project.location}}</span>
+						<span class="postInfoComment"><a href="http://demo.themespike.com/realestate/?ts-listings=sample-listing-3-2#respond" title="Comment on Sample Listing 3">0</a></span>
+					</p>
+					<div class="postThumb">
+						<a href="{{project.url}}">
+							<img width="208" height="101" src="{{project.thumbnail.imageSrc}}" class="imgPostThumb" alt=""/>
+							<img src="{{project.thumbnail.ribbonSrc}}" alt="" class="ribbon" />							
+						</a>
+					</div>
+						
+					<p class="unitAndPrice">				
+							<span class="unitInfo">{{project.unitAndPrice.info}}</span>		
+							<span class="unitPrice">{{project.untAndPrice.price}}</span>
+					</p>
+					<p>{{project.description}}</p>
+				</div>
+			<div class="clear"></div>
+			
+			<!--<p class="viewAllHolder"><a href="http://demo.themespike.com/realestate/?post_type=ts-listings"><span>View All</span></a></p>-->				
+			</div>
+			<!-- End: postColumnLeft -->
+			
+		</div>
+		<!-- End: homeContentLeft -->
+		
+		<!-- Begin: homeContentRight -->
+		<div id="homeContentRight">
+			
+			<div id="bannerLeftWrapper">
+            <br />
+        	<h2><a href="http://demo.themespike.com/realestate/?page_id=675">Sample Welcome Text Title</a></h2>
+            <br />
+            <br />
+            <br />
+			<p>This is a sample welcome message, you can edit me on the admin panel, under Appearance &gt; Theme Options &gt; Home Page Setup</p>
+	
+			<div id="subBannerLeft">
+	
+				<h2><a href="http://demo.themespike.com/realestate/?page_id=675">Sample Header Block Title</a></h2>
+	
+				<p>This is a sample header block message, you can edit me on the admin panel, under Appearance &gt; Theme Options &gt; Home Page Setup</p>
+	
+			</div>
+
+    	</div>
+			
+		</div>
+		<!-- End: homeContentRight -->
+		<div class="clear"></div>
+	</div>
+	<!-- End: homeContentWrapper -->
+	
+	<div id="homeWidgetContainer"></div>
+
+	<div class="clear"></div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+
+<div ng-controller="projectDetailTabCtrl">
+	<h1 id="H1" class="postTitle"></h1>
+	<br />
+	<h1 id="page-title" class="postTitle">Villa Specification</h1>
+	<div class="entry entry-content content-styles">
+        <div ng-repeat="s in specs">
+		    <h4 id="h4" class="postSubTitle" >{{s.title}}</h4>
+		    <ul>
+			    <li ng-repeat="c in s.contents">{{c.name}}</li>
+		    </ul>
+        </div>
+		<!--<h4 id="h5" class="postSubTitle comment-reply-title">Plastering</h4>
+		<p>All internal walls are smoothly plastered with river sand</p>
+		<h4 id="h6" class="postSubTitle comment-reply-title">Painting</h4>
+        <ul>
+            <li>Interior: Acrylic emulsion paint with putty finish</li>
+            <li>Exterior: Maintenance free texture paint or other equivalent solution as per Facade</li>
+        </ul>
+		<h4 id="h7" class="postSubTitle comment-reply-title">Flooring</h4>
+        <ul>
+            <li>Vitrified tile flooring in living, dining and family areas</li>
+            <li>Master Bedroom - Laminated Wooden flooring in master bedrooms</li>
+        </ul>-->
+		<div class="clear"></div>
+	</div>
+</div>

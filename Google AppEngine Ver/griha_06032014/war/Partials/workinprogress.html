@@ -1,0 +1,12 @@
+﻿
+<div class="container" ng-controller="wipCtrl">
+    <div class="main">
+				<ul id="og-grid" class="og-grid">
+					<li ng-repeat="t in thumbnails">
+						<a href={{t.href}} data-largesrc={{t.largeSrc}} data-title={{t.title}} data-description={{t.description}}>
+							<img src={{t.imgSrc}} alt={{t.alt}}/>
+						</a>
+					</li>
+                </ul>
+    </div>
+</div>

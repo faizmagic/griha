@@ -15,4 +15,20 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2">
 	<welcome-file-list>
 		<welcome-file>Index.html</welcome-file>
 	</welcome-file-list>
+	    <filter>
+        <filter-name>generic</filter-name>
+        <filter-class>griha.co.in.genericFilter</filter-class>
+        <init-param>
+            <param-name>prerenderServiceUrl</param-name>
+            <param-value>http://localhost:3000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>crawlerUserAgents</param-name>
+            <param-value>YahooSeeker</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>generic</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>
